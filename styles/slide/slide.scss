@@ -21,18 +21,19 @@
 	// Number
 
 	&::after {
-		position:absolute;
-		top:0;
-		right:100px;
-		padding-top:15px;
-		width:50px;
-		height:100px;
-		background:url(../images/ribbon.svg) no-repeat;
-		color:#FFF;
-		counter-increment:slide;
-		content:counter(slide);
-		text-align:center;
-		}
+		position: absolute;
+		top: -24px;
+		right: 20px;
+		padding-top: 28px;
+		width: 50px;
+		height: 101px;
+		background: url(../images/ribbon.svg) no-repeat;
+		color: #444;
+		text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+		counter-increment: slide;
+		content: counter(slide);
+		text-align: center;
+	}
 
 	// Content
 
@@ -50,6 +51,7 @@
 	@import
 		'modifiers/grid',
 		'modifiers/black',
+		'modifiers/blue',
 		'modifiers/white';
 
 	// Elements

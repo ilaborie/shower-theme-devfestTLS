@@ -51,7 +51,9 @@ gulp.task('styles', () => {
 				}),
 				csso
 			]))
-			.pipe(header(banner, { pkg: pkg }))
+			.pipe(header(banner, {
+				pkg: pkg
+			}))
 			.pipe(rename((path) => {
 				path.basename += `-${ ratio.replace('/', 'x') }`;
 			}))
@@ -59,3 +61,4 @@ gulp.task('styles', () => {
 			.pipe(sync.stream());
 	});
 });
+

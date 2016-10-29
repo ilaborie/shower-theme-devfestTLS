@@ -1,13 +1,15 @@
 // ------------------------------------------------------------------
-// White
+// Blue
 // ------------------------------------------------------------------
 
-&.white {
-
-	background-color:#FFF;
+&.blue {
+	background-color:#00b0f0;
+	color: #fff;
+	h2 {
+		color: #fff;
+	}
 
 	&::after {
 		visibility:hidden;
-		}
-
+	}
 }

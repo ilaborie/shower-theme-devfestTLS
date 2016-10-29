@@ -1,24 +1,24 @@
 {
-  "name": "shower-ribbon",
-  "description": "Ribbon theme for Shower HTML presentation engine",
-  "version": "2.0.8",
+  "name": "shower-theme-devfvest",
+  "description": "Devfest theme for Shower HTML presentation engine",
+  "version": "0.0.1",
   "author": {
-    "name": "Vadim Makeev",
-    "url": "http://pepelsbey.net/"
+    "name": "Igor Laborie",
+    "url": "http://ilaborie.org/"
   },
-  "homepage": "https://github.com/shower/ribbon",
+  "homepage": "https://ilaborie.github.io/shower-theme-devfvest",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shower/ribbon.git"
+    "url": "git://github.com/ilaborie/shower-theme-devfvest.git"
   },
   "bugs": {
-    "url": "http://github.com/shower/shower/issues"
+    "url": "http://github.com/ilaborie/shower-theme-devfvest/issues"
   },
   "license": "MIT",
   "keywords": [
     "shower",
     "presentation",
-    "ribbon",
+    "devfest",
     "theme"
   ],
   "files": [
@@ -35,11 +35,13 @@
     "autoprefixer": "^6.4.0",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
     "gulp-header": "^1.8.8",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.10",
     "path-exists-cli": "^1.0.0",
     "postcss-csso": "^1.1.2",
     "shower-core": "^2.0.7"
