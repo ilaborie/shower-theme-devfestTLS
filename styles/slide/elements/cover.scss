@@ -4,49 +4,49 @@
 
 .cover {
 
-	position:absolute;
-	top:50%;
-	left:50%;
-	z-index:-1;
-	transform:translate(-50%, -50%);
-	max-width:100%;
-	max-height:100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 
-	// Fitting
+  // Fitting
 
-	&.width, &.w {
-		width:100%;
-		max-height:none;
-		}
-	&.height, &.h {
-		height:100%;
-		max-width:none;
-		}
+  &.width, &.w {
+    width: 100%;
+    max-height: none;
+  }
+  &.height, &.h {
+    height: 100%;
+    max-width: none;
+  }
 
-	// Watermark
+  // Watermark
 
-	& + figcaption {
+  & + figcaption {
 
-		position:absolute;
-		bottom:20px;
-		right:10px;
-		font-size:12px;
-		opacity:0.7;
-		transform-origin:0 100%;
-		transform:translateX(100%) rotate(-90deg);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+    transform-origin: 0 100%;
+    transform: translateX(100%) rotate(-90deg);
 
-		// White
+    // White
 
-		&.white {
-			color:#FFF;
-			}
+    &.white {
+      color: #FFF;
+    }
 
-		// Links
+    // Links
 
-		a {
-			color:currentcolor;
-			}
+    a {
+      color: currentcolor;
+    }
 
-		}
+  }
 
-	}
+}

@@ -4,17 +4,17 @@
 
 .shout {
 
-	position:absolute;
-	top:50%;
-	left:0;
-	width:100%;
-	text-align:center;
-	line-height:1;
-	font-size:150px;
-	transform:translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 150px;
+  transform: translateY(-50%);
 
-	a {
-		@include underline(currentColor, 0.11);
-		}
+  a {
+    @include underline(currentColor, 0.11);
+  }
 
-	}
+}

@@ -1,5 +1,5 @@
 {
-  "name": "shower-theme-devfvest",
+  "name": "shower-theme-devfest",
   "description": "Devfest theme for Shower HTML presentation engine",
   "version": "0.0.1",
   "author": {
@@ -51,5 +51,8 @@
     "styles": "gulp styles",
     "prepublish": "npm run styles",
     "test": "path-exists styles/screen-16x10.css && path-exists styles/screen-4x3.css"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }

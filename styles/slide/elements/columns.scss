@@ -4,12 +4,14 @@
 
 .double,
 .triple {
-	column-gap:75px;
-	hyphens:auto;
-	}
+  column-gap: 75px;
+  hyphens: auto;
+}
+
 .double {
-	column-count:2;
-	}
+  column-count: 2;
+}
+
 .triple {
-	column-count:3;
-	}
+  column-count: 3;
+}

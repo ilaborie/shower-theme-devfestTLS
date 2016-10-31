@@ -10,26 +10,26 @@
 
 $ratio:[RATIO];
 
-@import
-	'defaults',
-	'fonts',
-	'reset',
-	'print';
+@import 'defaults',
+'fonts',
+'reset',
+'print';
 
 // Elements
 
-@import
-	'shower/shower',
-	'caption/caption',
-	'slide/slide',
-	'progress/progress',
-	'badge/badge',
-	'region/region';
+@import 'shower/shower',
+'caption/caption',
+'slide/slide',
+'progress/progress',
+'badge/badge',
+'region/region';
 
 // Modes
 
 @media screen {
-	@import
-		'shower/shower-list',
-		'shower/shower-full';
-	}
+  @import 'shower/shower-list',
+  'shower/shower-full';
+}
+
+// Extra
+@import "../node_modules/font-awesome/scss/font-awesome";

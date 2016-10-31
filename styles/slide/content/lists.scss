@@ -4,43 +4,56 @@
 
 ol, ul {
 
-	margin-bottom:1em;
-	counter-reset:list;
+  margin-bottom: 1em;
+  counter-reset: list;
 
-	li {
+  li {
 
-		page-break-inside:avoid;
-		text-indent:-2em;
+    page-break-inside: avoid;
+    text-indent: -2em;
 
-		// Marker
+    // Marker
 
-		&::before {
-			display:inline-block;
-			width:2em;
-			color:lighten($grey, 25%);
-			text-align:right;
-			}
+    &::before {
+      display: inline-block;
+      width: 2em;
+      color: lighten($grey, 25%);
+      text-align: right;
+    }
 
-		}
+  }
 
-	ol, ul {
-		margin-bottom:0;
-		margin-left:2em;
-		}
+  ol, ul {
+    margin-bottom: 0;
+    margin-left: 2em;
+  }
 
-	}
+}
 
 // Markers
 
-ul > li::before {
-	padding-right:0.5em;
-	content:'•';
-	}
-ul > li:lang(ru)::before {
-	content:'—';
-	}
+ul > li:not(.unstyled)::before {
+  padding-right: 0.5em;
+  content: '•';
+}
+
 ol > li::before {
-	padding-right:0.4em;
-	counter-increment:list;
-	content:counter(list)'.';
-	}
+  padding-right: 0.4em;
+  counter-increment: list;
+  content: counter(list) '.';
+}
+
+ul > li.code::before, ol > li.code::before {
+  display: inline-block;
+  font: 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0.5em;
+  content: '\f121';
+}
+
+ul.unstyled > li::before {
+  content: '';
+}

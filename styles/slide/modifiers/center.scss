@@ -1,13 +1,11 @@
 // ------------------------------------------------------------------
-// Next Full
+// Center
 // ------------------------------------------------------------------
 
-.next {
-
-  visibility: hidden;
-
-  &.active {
-    visibility: visible;
-  }
-
+&.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 100px;
 }

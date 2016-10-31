@@ -14,67 +14,82 @@
 
 pre {
 
-	margin-bottom:1em;
-	counter-reset:code;
-	white-space:normal;
+  margin-bottom: 1em;
+  counter-reset: code;
+  white-space: normal;
+  background: lighten($grey, 50%);
 
-	// Inner
+  padding: 4px;
+  border-radius: 4px;
 
-	code {
+  // Inner
 
-		display:block;
-		margin-left:-100px;
-		padding:0 0 0 100px;
-		width:calc(100% + 100px + 100px);
-		border-radius:0;
-		background:none;
-		line-height:2;
-		white-space:pre;
-		tab-size:4;
+  code {
 
-		&:not(:only-child) {
+    display: block;
+    margin-left: -100px;
+    padding: 0 0 0 100px;
+    width: calc(100% + 100px + 100px);
+    border-radius: 0;
+    background: none;
+    line-height: 2;
+    white-space: pre;
+    tab-size: 4;
 
-			// Marked Lines
+    &:not(:only-child) {
 
-			&.mark {
-				background:$grey-back;
-				}
+      // Marked Lines
 
-			// Line Numbers
+      &.mark {
+        background: $grey-back;
+      }
 
-			&::before {
-				position:absolute;
-				margin-left:-2em;
-				color:lighten($grey, 25%);
-				counter-increment:code;
-				content:counter(code, decimal-leading-zero)'.';
-				}
+      // Line Numbers
 
-			}
+      &::before {
+        position: absolute;
+        margin-left: -2em;
+        color: lighten($grey, 25%);
+        counter-increment: code;
+        content: counter(code, decimal-leading-zero) '.';
+      }
 
-		}
+    }
 
-	// Marked
+  }
 
-	mark {
+  // Marked
 
-		position:relative;
-		z-index:-1;
-		margin:0 -0.3em;
+  mark {
 
-		// Important
+    position: relative;
+    z-index: -1;
+    margin: 0 -0.3em;
 
-		&.important {
-			background:#C00;
-			color:#FFF;
-			}
+    // Important
 
-		}
+    &.important {
+      background: #C00;
+      color: #FFF;
+    }
 
-	// Comment
+  }
 
-	.comment {
-		color:#999;
-		}
+  // Comment
 
-	}
+  .comment {
+    color: #999;
+  }
+
+  // String
+  .string {
+    color: #008000;
+  }
+  .className {
+    color: #004080;
+  }
+  .keyword {
+    color: #800040;
+  }
+
+}

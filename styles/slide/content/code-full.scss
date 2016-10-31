@@ -10,23 +10,23 @@
 
 pre {
 
-	// Inner
+  // Inner
 
-	code {
+  code {
 
-		&:not(:only-child) {
+    &:not(:only-child) {
 
-			// Marked Lines
+      // Marked Lines
 
-			&.mark.next {
-				visibility:visible;
-				background:none;
-				}
-			&.mark.next.active {
-				background:$grey-back;
-				}
+      &.mark.next {
+        visibility: visible;
+        background: none;
+      }
+      &.mark.next.active {
+        background: $grey-back;
+      }
 
-			}
+    }
 
-		}
-	}
+  }
+}

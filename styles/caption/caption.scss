@@ -8,36 +8,36 @@
 
 .caption {
 
-	// Calculations
+  // Calculations
 
-	@each $scale in 4, 2, 1 {
-		@include scale($scale) {
-			font-size:$gap / $scale;
-			}
-		}
+  @each $scale in 4, 2, 1 {
+    @include scale($scale) {
+      font-size: $gap / $scale;
+    }
+  }
 
-	// Decoration
+  // Decoration
 
-	display:none;
-	margin-top:-0.2em;
-	padding:0 1em 0.93em;
-	width:100%;
-	color:#3C3D40;
-	text-shadow:0 1px 0 #8D8E90;
+  display: none;
+  margin-top: -0.2em;
+  padding: 0 1em 0.93em;
+  width: 100%;
+  color: #3C3D40;
+  text-shadow: 0 1px 0 #8D8E90;
 
-	// Contents
+  // Contents
 
-	h1 {
-		padding-bottom:0.15em;
-		font:bold 1em/1 'Noto Sans', sans-serif;
-		}
-	p {
-		line-height:1;
-		font-size:0.6em;
-		}
-	a {
-		color:$blue;
-		text-shadow:0 -1px 0 #1F3F60;
-		}
+  h1 {
+    padding-bottom: 0.15em;
+    font: bold 1em/1 'Noto Sans', sans-serif;
+  }
+  p {
+    line-height: 1;
+    font-size: 0.6em;
+  }
+  a {
+    color: $blue;
+    text-shadow: 0 -1px 0 #1F3F60;
+  }
 
-	}
+}

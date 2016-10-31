@@ -8,44 +8,44 @@
 
 table {
 
-	margin-left:-100px;
-	margin-bottom:1em;
-	width:calc(100% + 100px + 100px);
+  margin-left: -100px;
+  margin-bottom: 1em;
+  width: calc(100% + 100px + 100px);
 
-	// Cells
+  // Cells
 
-	th:first-child,
-	td:first-child {
-		padding-left:96px;
-		}
-	th:last-child,
-	td:last-child {
-		padding-right:96px;
-		}
-	th {
-		text-align:left;
-		font-weight:bold;
-		}
+  th:first-child,
+  td:first-child {
+    padding-left: 96px;
+  }
+  th:last-child,
+  td:last-child {
+    padding-right: 96px;
+  }
+  th {
+    text-align: left;
+    font-weight: bold;
+  }
 
-	// Lines
+  // Lines
 
-	tr:not(:last-of-type) {
-		> * {
-			@include underline($grey-line, 0.055);
-			}
-		}
+  tr:not(:last-of-type) {
+    > * {
+      @include underline($grey-line, 0.055);
+    }
+  }
 
-	// Stripes
+  // Stripes
 
-	&.striped {
-		tr {
-			&:nth-child(even) {
-				background:$grey-back;
-				}
-			> * {
-				background-image:none;
-				}
-			}
-		}
+  &.striped {
+    tr {
+      &:nth-child(even) {
+        background: $grey-back;
+      }
+      > * {
+        background-image: none;
+      }
+    }
+  }
 
-	}
+}

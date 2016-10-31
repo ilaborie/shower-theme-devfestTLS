@@ -3,13 +3,13 @@
 // ------------------------------------------------------------------
 
 &.blue {
-	background-color:#00b0f0;
-	color: #fff;
-	h2 {
-		color: #fff;
-	}
+  background-color: $blue;
+  color: #fff;
+  h2, a {
+    color: #fff;
+  }
 
-	&::after {
-		visibility:hidden;
-	}
+  &::after {
+    background: url(../images/ribbon-white.svg) no-repeat;
+  }
 }

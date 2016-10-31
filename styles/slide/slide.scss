@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------
 // Slide
 // ------------------------------------------------------------------
-// 1. Number ........... Red ribbon with page number
+// 1. Number ........... Blue ribbon with page number
 // 2. Content .......... Various content types
 // 3. Modifiers......... Slide modifiers
 // 4. Elements ......... Content elements
@@ -9,57 +9,55 @@
 
 .slide {
 
-	position:relative;
-	z-index:1;
-	overflow:hidden;
-	padding:106px 100px 0;
-	width:$width;
-	height:$height;
-	background:#FFF;
-	font-size:25px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 53px 100px 0;
+  width: $width;
+  height: $height;
+  background: #FFF;
+  font-size: 25px;
 
-	// Number
+  // Number
 
-	&::after {
-		position: absolute;
-		top: -24px;
-		right: 20px;
-		padding-top: 28px;
-		width: 50px;
-		height: 101px;
-		background: url(../images/ribbon.svg) no-repeat;
-		color: #444;
-		text-shadow: 2px 2px 4px rgba(0,0,0,.5);
-		counter-increment: slide;
-		content: counter(slide);
-		text-align: center;
-	}
+  &::after {
+    position: absolute;
+    top: -24px;
+    right: 20px;
+    padding-top: 28px;
+    width: 50px;
+    height: 101px;
+    background: url(../images/ribbon.svg) no-repeat;
+    color: #444;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    counter-increment: slide;
+    content: counter(slide);
+    text-align: center;
+  }
 
-	// Content
+  // Content
 
-	@import
-		'content/basic',
-		'content/inline',
-		'content/quote',
-		'content/lists',
-		'content/table',
-		'content/code',
-		'content/footer';
+  @import 'content/basic',
+  'content/inline',
+  'content/quote',
+  'content/lists',
+  'content/table',
+  'content/code',
+  'content/footer';
 
-	// Modifiers
+  // Modifiers
 
-	@import
-		'modifiers/grid',
-		'modifiers/black',
-		'modifiers/blue',
-		'modifiers/white';
+  @import 'modifiers/grid',
+  'modifiers/black',
+  'modifiers/blue',
+  'modifiers/white',
+  'modifiers/center';
 
-	// Elements
+  // Elements
 
-	@import
-		'elements/columns',
-		'elements/shout',
-		'elements/cover',
-		'elements/place';
+  @import 'elements/columns',
+  'elements/shout',
+  'elements/cover',
+  'elements/place';
 
-	}
+}
